@@ -1,0 +1,129 @@
+body {
+  background-color: rgba(26, 37, 49, 1.0);
+}
+
+.slotmachine {
+  background-color: rgba(44, 137, 199, 1.0);
+  width: 700px;
+  margin: 70px auto 0;
+  padding: 20px 40px 20px 20px;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.75);
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
+  position: relative;
+}
+
+h1 {
+  margin-left: 20px;
+  font-family: 'Patua One';
+  font-size: 4em;
+  padding: 15px 0;
+  text-align: center;
+  color: rgba(233, 138, 54, 1.0);
+  background-color: rgba(192, 57, 43, 1.0);
+  border-radius: 10px;
+  border: 5px solid rgba(243, 156, 18, 1.0);
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+  position: relative;
+  box-shadow: inset 5px -5px 0 rgba(0,0,0,0.25);
+}
+
+.display {
+  background-color: rgba(48, 68, 88, 1.0);
+  padding: 20px;
+  box-shadow: inset 5px 7px 0px rgba(0, 0, 0, 0.7),
+              2px 5px 0px 3px rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
+  border: 5px solid rgba(26, 188, 156, 1.0);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.reel {
+  width: 178px;
+  height: 178px;
+  margin-left:20px;
+  display: inline-block;
+}
+
+.coffeeMaker {
+  background: url('../images/coffeeMaker.jpg');
+}
+
+@keyframes flow {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 100000%;}
+}
+
+.spin{
+-webkit-transition: flow 3s ease-out;
+  -moz-transition: flow 3s ease-out;
+  -o-transition: flow 3s ease-out;
+  transition: flow 3s ease-out; 
+  height: 179px;
+  z-index: 3;
+  animation: flow 1s linear infinite;
+}
+
+.teapot {
+  background: url('../images/teapot.jpg');
+}
+
+.espressoMachine {
+  background: url('../images/espressoMachine.jpg') ;
+}
+
+.coffeeFilter {
+  background: url('../images/coffeeFilter.jpg') ;
+}
+
+.teaStrainer {
+  background: url('../images/teaStrainer.jpg');
+}
+
+.espressoTamper {
+  background: url('../images/espressoTamper.jpg');
+}
+
+.coffeeGround {
+  background: url('../images/coffeeGround.jpg');
+}
+
+.looseTea {
+  background: url('../images/looseTea.jpg');
+}
+
+.groundEspressoBeans {
+  background: url('../images/groundEspressoBeans.jpg');
+}
+
+.lever {
+  position: relative;
+  left: 33%;
+  background-color: rgba(26, 188, 156, 1.0);
+  border: none;
+  width: 215px;
+  height: 75px;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: 0.4s all;
+  font-family: 'Patua One';
+  font-size: 2em;
+}
+
+.result {
+  text-align: center;
+  font-family: 'Patua One';
+  font-size: 3em;
+  color: rgba(192, 57, 43, 1.0);
+  border: 5px solid rgba(192, 57, 43, 1.0);
+  border-radius: 25px;
+  background-color: white;
+  margin-left: 20px;
+  padding: 5px 0;
+  margin-bottom: 40px;
+  margin-top:20px;
+}
